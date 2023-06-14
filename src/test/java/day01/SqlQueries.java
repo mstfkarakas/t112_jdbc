@@ -8,10 +8,14 @@ public class SqlQueries {
         return query;
     }
 
-     public String readingTableData(String tableName){
+     public String readingTableData(String tableName) {
+         String query = "select * from " +tableName;
+         return query;
+     }
 
-        String query = "select * from "+tableName ;
-       return query;
+     public String employeeSalaryTable(int salary){
+        String query = "select first_name, Last_name, salary from employees where salary>"+salary+";" ;
+        return query ;
      }
 
 

@@ -83,4 +83,7 @@ public class Jdbc01 {
             System.out.println(e.getMessage());
         }
     }
+
+    // Components of JDBC
+    // DriverManager, Driver, Statements, Connection, Resultset, SQLException
 }
