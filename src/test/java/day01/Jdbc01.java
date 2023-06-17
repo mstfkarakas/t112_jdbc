@@ -1,6 +1,5 @@
 package day01;
 
-
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -12,7 +11,7 @@ public class Jdbc01 {
 
     static String databaseUrl = "jdbc:mysql://localhost:3306/team112?serverTimezone=UTC";
     static String username = "root";
-    static String password = "ervanaz2012";
+    static String password = "1604";
 
     static Statement statement;
     static Connection connection;
@@ -30,7 +29,7 @@ public class Jdbc01 {
 
 
     @Test
-    public void productsTableView() throws SQLException {
+    public void salesmanTableView() throws SQLException {
         resultSet = statement.executeQuery("select * from salesman");
         while (resultSet.next()) {
             System.out.println(resultSet.getInt(1) + " " + resultSet.getString(2) +
